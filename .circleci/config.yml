@@ -15,6 +15,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "Say hello"
+          command: "echo Hello, World!"
+      - run:
           name: test
           command: python3 -m unittest test
 
