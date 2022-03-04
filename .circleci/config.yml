@@ -20,6 +20,9 @@ jobs:
       - run:
           name: test
           command: python3 -m unittest test
+      - run:
+          name: var
+          command: echo $abc
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
